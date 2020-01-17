@@ -39,25 +39,13 @@
 }
 
 .subtemas:hover{
-    font-size: 1.22rem;
+    font-size: 1.21rem;
     color: white;
 }
 
 .tema-title{
     margin-top: 0;
     background-color: lightblue;
-}
-
-.tema-title::before{
-    content: '';
-    display: block;
-    height: 5px;
-    position: relative;
-    top: 30px;
-    transform: scale(0,1);
-    transform-origin: center right;
-    background-color: white;
-    transition: transform .5s;
 }
 
 .tema-title:hover::before{
