@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: serif, sans-serif;
 }
 
 :root{
@@ -53,6 +54,11 @@ body{
 .container-cards{
     display: flex;
     width: 100%;
+    transition: all 1s;
+}
+
+.container-cards:hover{
+    background-color: orange;
 }
 
 .card{
@@ -85,4 +91,48 @@ body{
     line-height: 1.5em;
     word-spacing: 1px;
     font-weight: 550;
+}
+
+.modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(133, 133, 133, .8);
+}
+
+.modal:target{
+    display: flex;
+}
+
+.modal-box{
+    background-color: rgb(35, 133, 133);
+    color: white;
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.art{
+    background-color: red;
+    margin-bottom: 20px;
+    padding: 20px 50px;
+}
+
+.art:hover{
+    background-color: blue;
+}
+.art:active{
+    color: white;
+}
+
+.art:nth-child(even){
+    background-color: blueviolet;
 }

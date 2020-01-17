@@ -101,3 +101,7 @@
 //             break;
 //     }
 // } while (letra != letraSalir);
+
+for(let i = 1; i<= 10;i++){
+    console.log(Math.ceil(Math.random()*10));
+}
